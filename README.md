@@ -11,8 +11,8 @@ A Power BI project analysing **3.46 million NYC 311 service requests from year 2
 
 ## Data and method
 
-- **Source:** [NYC Open Data, 311 Service Requests from 2010 to Present](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9) (dataset ID `erm2-nwe9`), calendar year 2024.
-- **Extraction:** a Python script (`scripts/extract_311.py`) pulls the data from the Socrata API one month at a time and saves 12 CSV files. Only the 19 columns the analysis needs were kept (out of 44) to keep the model light.
+- **Source:** [NYC Open Data, 311 Service Requests from 2020 to Present](https://data.cityofnewyork.us/d/erm2-nwe9) (dataset ID `erm2-nwe9`), calendar year 2024.
+- **Extraction:** I downloaded the data with a Python script ([`scripts/extract_311.py`](scripts/extract_311.py)) that calls NYC Open Data's API for one month at a time, saving 12 monthly CSV files. I kept only the 19 columns I needed (out of 44) to keep the model light.
 
 ## The question
 
