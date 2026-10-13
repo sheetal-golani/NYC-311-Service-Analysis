@@ -8,7 +8,6 @@ A Power BI project analysing **3.46 million NYC 311 service requests from year 2
 ## How to open
 
 1. **[Download the Power BI file (164 MB)](https://github.com/sheetal-golani/NYC-311-Service-Analysis/releases/download/NYC311-PowerBI-dashboard/NYC-311.Service.Analysis.pbix)**
-2. Open it in Power BI Desktop.
 
 ## Data and method
 
