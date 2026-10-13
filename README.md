@@ -39,9 +39,10 @@ A star schema with one fact table and five dimensions. All relationships are one
 
 ## Key findings (2024, 3,456,770 requests)
 
-- **Most requests close fast.** The typical request closes within hours, and 60% are closed within a day. Fewer than 10% take longer than a month, so the overall picture is of a city that responds fast to most things.
+- **Most requests close fast.** The typical request closes within hours, and 60% are closed within a day. Fewer than 10% take longer than a month, so most requests are closed quickly.
 - **The type of problem matters more than where it happens.** Quick-fix problems such as illegal parking, noise and blocked driveways are almost always closed within a day (about 99%). Housing-condition problems rarely are: only 3% of unsanitary condition requests and 7% of plumbing requests close within a day. Heat and hot water, one of the most reported problems, closes within a day only 31% of the time.
 - **The workload is concentrated in two agencies.** NYPD handles about 45% of all requests and closes them in around an hour. HPD handles about 21%, mostly housing complaints, and its typical request takes a few days. The remaining agencies share a much smaller part of the workload.
-- **The slowest problems are licensing and infrastructure requests**, and can take months.
+- **The slowest problems are licensing and infrastructure requests**, such as tree requests and food vendor complaints. They are relatively rare, but they can take months to close.
+- **Requests are spread across all boroughs, but speed depends on the problem.** Brooklyn has the most requests (about 30%) and Staten Island the fewest (under 4%), though these are raw counts, not adjusted for population. No borough is consistently fastest: water system requests close within a day 93% of the time in Manhattan but 59% in the Bronx, while for heat and hot water the Bronx does best and Manhattan worst.
 
 
