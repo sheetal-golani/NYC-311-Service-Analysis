@@ -20,11 +20,10 @@ A Power BI project analysing **3.46 million NYC 311 service requests from year 2
 
 ## Key findings (2024, 3,456,770 requests)
 
-- **Most requests close fast.** The typical request closes within hours, and only a small share take over a month.
-- **Problem type decides speed.** Parking and noise close within a day. Housing problems like plumbing and unsanitary conditions take much longer.
-- **Workload is concentrated.** NYPD handles the largest share of requests and closes them fastest. HPD handles the second largest share and takes days.
+- **Most requests close fast.** The typical request closes within hours, and 60% are closed within a day. Fewer than 10% take longer than a month, so the overall picture is of a city that responds fast to most things.
+- **The type of problem matters more than where it happens.** Quick-fix problems such as illegal parking, noise and blocked driveways are almost always closed within a day (about 99%). Housing-condition problems rarely are: only 3% of unsanitary condition requests and 7% of plumbing requests close within a day. Heat and hot water, one of the most reported problems, closes within a day only 31% of the time.
+- **The workload is concentrated in two agencies.** NYPD handles about 45% of all requests and closes them in around an hour. HPD handles about 21%, mostly housing complaints, and its typical request takes a few days. The remaining agencies share a much smaller part of the workload.
 - **The slowest problems are licensing and infrastructure requests**, and can take months.
-
 
 ## Data model
 A star schema with one fact table and five dimensions. All relationships are one-to-many and active.
