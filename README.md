@@ -9,6 +9,20 @@ A Power BI project analysing **3.46 million NYC 311 service requests from year 2
 
 1. **[Download the Power BI file (164 MB)](https://github.com/sheetal-golani/NYC-311-Service-Analysis/releases/download/NYC311-PowerBI-dashboard/NYC-311.Service.Analysis.pbix)**
 
+
+## Data and method
+
+- **Source:** [NYC Open Data, 311 Service Requests from 2020 to Present](https://data.cityofnewyork.us/d/erm2-nwe9) (dataset ID `erm2-nwe9`), calendar year 2024.
+- **Extraction:** I downloaded the data with a Python script ([`scripts/extract_311.py`](extract_311.py)) that calls NYC Open Data's API for one month at a time, saving 12 monthly CSV files. I kept only the 19 columns I needed (out of 44) to keep the model light.
+
+
+## Data model
+
+A star schema with one fact table and five dimensions. All relationships are one-to-many and active.
+
+![Data model](Data%20Model.png)
+
+
 ## Dashboard preview
 
 
@@ -17,18 +31,6 @@ A Power BI project analysing **3.46 million NYC 311 service requests from year 2
 ![Agencies](Dashboard/2.%20Agencies.png)
 
 ![Problem speed](Dashboard/3.%20Problem%20Speed.png)
-
-
-## Data and method
-
-- **Source:** [NYC Open Data, 311 Service Requests from 2020 to Present](https://data.cityofnewyork.us/d/erm2-nwe9) (dataset ID `erm2-nwe9`), calendar year 2024.
-- **Extraction:** I downloaded the data with a Python script ([`scripts/extract_311.py`](extract_311.py)) that calls NYC Open Data's API for one month at a time, saving 12 monthly CSV files. I kept only the 19 columns I needed (out of 44) to keep the model light.
-
-## Data model
-
-A star schema with one fact table and five dimensions. All relationships are one-to-many and active.
-
-![Data model](Data%20Model.png)
 
 
 ## The question
