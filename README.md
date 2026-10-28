@@ -26,11 +26,13 @@ A star schema with one fact table and five dimensions. All relationships are one
 
 ## Dashboard preview
 
-
+**Page 1: Overview.** Total requests, top complaint types, requests by borough and the time-to-close distribution.
 ![Overview](Dashboard/1.%20Dashboard%20Overview.png)
 
+**Page 2: Agencies.** Which agencies handle the workload, how fast each one closes requests, and which complaints take the longest.
 ![Agencies](Dashboard/2.%20Agencies.png)
 
+**Page 3: Problem speed.** How quickly each type of problem gets closed, from under an hour to over a month.
 ![Problem speed](Dashboard/3.%20Problem%20Speed.png)
 
 
@@ -79,8 +81,6 @@ Why a star schema: the model is smaller and faster, filters work cleanly across 
 - **Share of requests:** uses `REMOVEFILTERS` so each bar shows its share of the total.
 - **Fast-problem ranking:** a measure that sets a minimum request count and picks problems where most requests close within a day, used inside a Top N filter.
 
-### 4. Design the report
-The report has three pages, each answering one part of the question:
-- **Overview:** KPI cards, the top 10 complaint types, requests by borough, the time-to-close distribution, and agency and borough slicers.
-- **Agencies:** agency workload and typical time to close by agency, shown as simple bar charts, plus a chart of the complaints that take the longest to close. 
-- **Problem speed:** how quickly each type of problem gets closed, using the speed buckets and the fast-problem ranking.
+### 4. Design the Dashboard
+The Dashboard has three pages; Overview, Agencies, Problem speed, each answering one part of the question:
+
