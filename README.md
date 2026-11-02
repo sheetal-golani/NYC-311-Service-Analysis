@@ -79,11 +79,5 @@ Why a star schema: the model is smaller and faster, filters work cleanly across 
 - **Fast-problem ranking:** a measure that sets a minimum request count and picks problems where most requests close within a day, used inside a Top N filter.
 
 ### 4. Design the dashboard
-The dashboard has two pages, each answering one part of the question:
-- **Overview (how much, and how fast overall):** headline cards for total, closed and open requests, the median time to close and the share closed within a day; requests by borough; the 20 most reported problems; and how quickly requests are closed. Slicers for agency, borough and date filter the whole page.
-- **Agencies & Problem types (who, and what):** the share of requests each agency handles, the typical time each agency takes to close a request, the 15 slowest problems to close, and the 10 busiest fast-closing problems, shown as a 100% stacked bar by closing-time bucket.
+The dashboard has two pages, as shown above.
 
-Design choices:
-- Titles are written as plain-language descriptions, so a reader does not need to know the measure names.
-- The agency chart carries a note that agencies handle different kinds of problems, so it shows typical workload, not which agency performs better.
-- Rankings use Top N filters and a minimum request count, so small categories do not dominate a chart.
