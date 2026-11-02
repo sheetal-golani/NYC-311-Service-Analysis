@@ -30,7 +30,7 @@ A star schema with one fact table and five dimensions. All relationships are one
 ![Overview](Dashboard/1.%20Dashboard%20Overview.png)
 
 **Page 2: Agencies & Problem types.** Which agencies handle the workload and how long each takes to close requests, plus the slowest problems and the busiest fast-closing problems.
-![Agencies and Problem types](Dashboard/2.%20Agencies.png)
+![Agencies and Problem types](Dashboard/2.%20Agencies%and%Problem%Types.png)
 
 
 ## The question
